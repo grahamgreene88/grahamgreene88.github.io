@@ -5,7 +5,7 @@
 ### Category Name 1 
 
 [Antibiotic Resistance Prediction](/sample_page)
-<img src="images/Thumbnail.jpg?raw=true"/>
+<img src="images/Thumbnail.jpg"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
