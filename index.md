@@ -1,8 +1,8 @@
-## Portfolio
+## Projects
 
 ---
 
-### Category Name 1 
+<!-- ### Category Name 1 -->
 
 [Antibiotic Resistance Prediction](/sample_page)
 <img src="images/Thumbnail.jpg"/>
@@ -17,13 +17,13 @@
 
 ---
 
-### Category Name 2
+<!-- ### Category Name 2
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+- [Project 5 Title](http://example.com/) -->
 
 ---
 
