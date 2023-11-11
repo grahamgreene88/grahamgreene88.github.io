@@ -10,8 +10,9 @@
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
+### Forest Fire Area Prediction
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
+[View code on Github](http://example.com/)
 
 ---
 
