@@ -3,7 +3,7 @@
 ---
 
 
-[Antibiotic Resistance Prediction](/sample_page)
+[Antibiotic Resistance Prediction](/Project_1_Page)
 <img src="images/Thumbnail.jpg"/>
 
 ---
