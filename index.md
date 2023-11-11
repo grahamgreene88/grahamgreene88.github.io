@@ -3,7 +3,7 @@
 ---
 ### Antibiotic Resistance Prediction
 <img src="images/Thumbnail.jpg"/>
-[View code on Github]([/Project_1_Page.md](https://github.com/grahamgreene88/Antibiotic-Resistance-Prediction/blob/main/Antibiotic%20Resistance%20Prediction%20Notebook-Final.ipynb))
+[View code on Github](https://github.com/grahamgreene88/Antibiotic-Resistance-Prediction/blob/main/Antibiotic%20Resistance%20Prediction%20Notebook-Final.ipynb)
 
 ---
 [Project 2 Title](/Project_1_Page)
