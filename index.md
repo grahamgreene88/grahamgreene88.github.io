@@ -12,6 +12,7 @@ As part of my 4th year research, I built a classification model to predict antib
 
 ---
 ### Behavioural Customer Segmentation using RFM Analysis
+Customer Segmentation is used by commercial entities like banks to group their customers based on common traits like transaction behaviour. The resulting clusters enable targeted marketing strategies that generate high rates of response and can increase customer loyalty and lifetime value. The RFM technique is used to group customers based on the recency, frequency and amount (monetary) of their transactions.
 
 <img src="images/pie_chart.png"/>
 
