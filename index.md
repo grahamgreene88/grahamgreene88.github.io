@@ -7,8 +7,9 @@ As part of my 4th year research, I built a classification model to predict antib
 [View code on Github](https://github.com/grahamgreene88/Antibiotic-Resistance-Prediction/blob/main/Antibiotic%20Resistance%20Prediction%20Notebook-Final.ipynb)
 
 ---
-[Project 2 Title](/Project_1_Page)
+### Behavioural Customer Segmentation using RFM Analysis
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
+[View code on Github](https://github.com/grahamgreene88/Behavioural-Segmentation/blob/main/Behavioural%20Customer%20Segmentation-Final.ipynb))
 
 ---
 ### Forest Fire Area Prediction
