@@ -1,4 +1,4 @@
-## Projects
+## Portfolio Projects
 
 ---
 ### Antibiotic Resistance Prediction
@@ -21,18 +21,8 @@ Customer Segmentation is used by commercial entities like banks to group their c
 [View code on Github](https://github.com/grahamgreene88/Behavioural-Segmentation/blob/main/Behavioural%20Customer%20Segmentation-Final.ipynb)
 
 ---
-### Forest Fire Area Prediction
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-[View code on Github](http://example.com/)
-
 ---
-
-
 ---
-
-
-
-
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
 <!-- Remove above link if you don't want to attibute -->
