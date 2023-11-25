@@ -1,13 +1,4 @@
 ## Portfolio Projects
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MMNPLZRHWH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MMNPLZRHWH');
-</script>
 ---
 ### Antibiotic Resistance Prediction
 As part of my 4th year research, I built a classification model to predict antibiotic resistance in the deadly pathogen *Pseudomonas Aeruginosa*. Specific emphasis was placed on optimizing the model's recall to minimize false negatives which could lead to deadly patient outcomes in a clinical setting.
