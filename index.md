@@ -8,7 +8,7 @@ It is becoming increasing clear that Canada must decrease its greenhouse gas emi
 [![](https://img.shields.io/badge/SQL%20Server-white?logo=microsoft-sql-server&logoColor=red)](#)
 [![](https://img.shields.io/badge/Tableau-white?logo=tableau&logoColor=orange)](#)
 
-[View SQL queries on Github](https://github.com/grahamgreene88/Behavioural-Segmentation/blob/main/Behavioural%20Customer%20Segmentation-Final.ipynb)
+[View SQL queries on Github](https://github.com/grahamgreene88/Canada-Emissions/blob/main/SQL_GHG_notebook.ipynb)
 
 [View interactive dashboard](https://github.com/grahamgreene88/Behavioural-Segmentation/blob/main/Behavioural%20Customer%20Segmentation-Final.ipynb)
 
