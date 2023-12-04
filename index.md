@@ -10,7 +10,7 @@ It is becoming increasing clear that Canada must decrease its greenhouse gas emi
 
 [View SQL queries on Github](https://github.com/grahamgreene88/Canada-Emissions/blob/main/SQL_GHG_notebook.ipynb)
 
-[View interactive dashboard](https://github.com/grahamgreene88/Behavioural-Segmentation/blob/main/Behavioural%20Customer%20Segmentation-Final.ipynb)
+[View interactive dashboard](https://public.tableau.com/views/emissions_tableau_workbook/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ---
 ### Antibiotic Resistance Prediction
