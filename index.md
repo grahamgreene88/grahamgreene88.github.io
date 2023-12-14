@@ -16,7 +16,7 @@ It is becoming increasing clear that Canada must decrease its greenhouse gas emi
 ### Examining Customer Behaviour from E-commerce Orders
 This projects looks at orders from a large e-commerce company with customers all over the world. Using SQL Sever, order trends and sales are analyzed on a per country basis to gain insight into which countries warrant further investigation to improve performance. The insights are then visualized in a clear tableau dashboard that provides ease of access and clear understanding to essential information.
 
-<img src="images/emissions_dashboard_canada.jpg"/>
+<img src="images/e-commerce_dashboard_photo.png"/>
 
 [![](https://img.shields.io/badge/SQL%20Server-white?logo=microsoft-sql-server&logoColor=red)](#)
 [![](https://img.shields.io/badge/Tableau-white?logo=tableau&logoColor=orange)](#)
