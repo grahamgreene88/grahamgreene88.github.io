@@ -21,9 +21,9 @@ This projects looks at orders from a large e-commerce company with customers all
 [![](https://img.shields.io/badge/SQL%20Server-white?logo=microsoft-sql-server&logoColor=red)](#)
 [![](https://img.shields.io/badge/Tableau-white?logo=tableau&logoColor=orange)](#)
 
-[View SQL queries on Github](https://github.com/grahamgreene88/Canada-Emissions/blob/main/SQL_GHG_notebook.ipynb)
+[View SQL queries on Github](https://github.com/grahamgreene88/E-commerce-logs/blob/main/ecommerce_logs_SQL_notebook.ipynb)
 
-[View interactive dashboard](https://public.tableau.com/views/emissions_tableau_workbook/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+[View interactive dashboard](https://public.tableau.com/app/profile/graham.greene/viz/e-commerce_orders_dashboard/Dashboard1#1)
 
 ---
 ### Antibiotic Resistance Prediction
