@@ -13,6 +13,19 @@ It is becoming increasing clear that Canada must decrease its greenhouse gas emi
 [View interactive dashboard](https://public.tableau.com/views/emissions_tableau_workbook/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ---
+### Examining Customer Behaviour from E-commerce Orders
+This projects looks at orders from a large e-commerce company with customers all over the world. Using SQL Sever, order trends and sales are analyzed on a per country basis to gain insight into which countries warrant further investigation to improve performance. The insights are then visualized in a clear tableau dashboard that provides ease of access and clear understanding to essential information.
+
+<img src="images/emissions_dashboard_canada.jpg"/>
+
+[![](https://img.shields.io/badge/SQL%20Server-white?logo=microsoft-sql-server&logoColor=red)](#)
+[![](https://img.shields.io/badge/Tableau-white?logo=tableau&logoColor=orange)](#)
+
+[View SQL queries on Github](https://github.com/grahamgreene88/Canada-Emissions/blob/main/SQL_GHG_notebook.ipynb)
+
+[View interactive dashboard](https://public.tableau.com/views/emissions_tableau_workbook/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
+---
 ### Antibiotic Resistance Prediction
 As part of my 4th year research, I built a classification model to predict antibiotic resistance in the deadly pathogen *Pseudomonas Aeruginosa*. Specific emphasis was placed on optimizing the model's recall to minimize false negatives which could lead to deadly patient outcomes in a clinical setting.
 
@@ -32,8 +45,6 @@ Customer Segmentation is used by commercial entities like banks to group their c
 
 [View code on Github](https://github.com/grahamgreene88/Behavioural-Segmentation/blob/main/Behavioural%20Customer%20Segmentation-Final.ipynb)
 
----
----
 ---
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
