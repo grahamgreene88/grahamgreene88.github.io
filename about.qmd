@@ -2,4 +2,11 @@
 title: "About"
 ---
 
-About this site
+## Background
+I grew up in Ottawa and lived two years abroad in Paris during my early teens. I completed my undegraduate degree in Chemical Engineering at Queen's Uinversity with a specialization in Biochemical Engineering. After a bioprocess research internship in Montreal, and data science research in my 4th year to predict antibiotic resistance using gene sequence data, I decided I wanted to apply data science to bioprocess engineering. This led me to working as a Process Data Scientist with Sanofi for their vaccine manufacturing operations in Toronto. In this role I performed multivariate analysis to support root-cause investigations, built interactive applications to provide useful predictions and analytics and worked with production data pipelines to bring manufacturing data to users.
+
+## Why Data Science
+I am passionate about using data to build solutions to address one of the world's greatest challenges - human health. I really enjoy diving deep into data to uncover hidden relationships and trends that can then be leveraged to make useful predictions. I want to take advantage of the growing amount of data in healthcare-related fields to create innovative solutions to improve human health.
+
+## Outside of data science
+Outside of school and work, I am an active and outdoorsy person. I love to hike and ski so I am very excited about living in Vancouver. I have already hiked a few summits in the North Shore Mountains and look forward to more hikes soon! I also enjoy endurance running and playing team sports like hockey and soccer. This past spring I completed my second half marathon.

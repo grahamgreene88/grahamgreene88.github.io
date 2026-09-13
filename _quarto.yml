@@ -3,12 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "Personal Website"
+  title: "Graham Greene"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: blog.qmd
+        text: Blog
 
 format:
   html:

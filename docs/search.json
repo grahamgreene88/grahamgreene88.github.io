@@ -1,16 +1,51 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "About this site"
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 12, 2026\n\n\nGraham Greene\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Personal Website",
+    "title": "Graham Greene",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "I am from Ottawa and I completed my undergrad in Chemical Engineering at Queen’s University. Before my Master’s in Data Science (MDS), I worked for Sanofi (biopharma) at the intersection of data science and vaccine manufacturing. During the MDS program I am looking to deepen my data science knowledge through formal education. This will help equip me to work in more senior data science roles in the healthcare, pharmaceutical, and biomedical fields going forward."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "Just over two weeks ago I started orientation for the Master’s of Data Science (MDS) program. The week went really fast and I met lots of cool people. There were lots of presentations as well as some team building activities. The orientation capped off with a Welcome Dinner where there was an alumni panel.\nThe day before orientation I did a hike to St. Mark’s Summit in the North Shore Mountains with a few others from the program. It was great to meet a few classmates who also enjoy hiking. I’m hoping I can get out to do more hiking with them this fall.\n\n\n\nView from St Marks Summit. It was a bit smoky :(\n\n\nAlthough I knew the MDS program was quite intense, I was still surprised at the pace of the program, even coming from an engineering background. Having just completed the second week of classes though, I find I am starting to get into a good rythm. This will really be tested next week during which we have three major evaluations on top of our normal lectures and labs."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in Ottawa and lived two years abroad in Paris during my early teens. I completed my undegraduate degree in Chemical Engineering at Queen’s Uinversity with a specialization in Biochemical Engineering. After a bioprocess research internship in Montreal, and data science research in my 4th year to predict antibiotic resistance using gene sequence data, I decided I wanted to apply data science to bioprocess engineering. This led me to working as a Process Data Scientist with Sanofi for their vaccine manufacturing operations in Toronto. In this role I performed multivariate analysis to support root-cause investigations, built interactive applications to provide useful predictions and analytics and worked with production data pipelines to bring manufacturing data to users."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in Ottawa and lived two years abroad in Paris during my early teens. I completed my undegraduate degree in Chemical Engineering at Queen’s Uinversity with a specialization in Biochemical Engineering. After a bioprocess research internship in Montreal, and data science research in my 4th year to predict antibiotic resistance using gene sequence data, I decided I wanted to apply data science to bioprocess engineering. This led me to working as a Process Data Scientist with Sanofi for their vaccine manufacturing operations in Toronto. In this role I performed multivariate analysis to support root-cause investigations, built interactive applications to provide useful predictions and analytics and worked with production data pipelines to bring manufacturing data to users."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why Data Science",
+    "text": "Why Data Science\nI am passionate about using data to build solutions to address one of the world’s greatest challenges - human health. I really enjoy diving deep into data to uncover hidden relationships and trends that can then be leveraged to make useful predictions. I want to take advantage of the growing amount of data in healthcare-related fields to create innovative solutions to improve human health."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of data science",
+    "text": "Outside of data science\nOutside of school and work, I am an active and outdoorsy person. I love to hike and ski so I am very excited about living in Vancouver. I have already hiked a few summits in the North Shore Mountains and look forward to more hikes soon! I also enjoy endurance running and playing team sports like hockey and soccer. This past spring I completed my second half marathon."
   }
 ]
