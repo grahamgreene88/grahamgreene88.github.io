@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Graham Greene">
+<meta name="author" content="Graham">
 <meta name="dcterms.date" content="2026-09-12">
 
-<title>My first weeks in MDS – Graham Greene</title>
+<title>End-to-end Expected Goals (xG) NHL Model – Graham Greene</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My first weeks in MDS</h1>
+<h1 class="title">End-to-end Expected Goals (xG) NHL Model</h1>
 </div>
 
 
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Graham Greene </p>
+             <p>Graham </p>
           </div>
   </div>
     
@@ -161,15 +161,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Just over two weeks ago I started orientation for the Master’s of Data Science (MDS) program. The week went really fast and I met lots of cool people. There were lots of presentations as well as some team building activities. The orientation capped off with a Welcome Dinner where there was an alumni panel.</p>
-<p>The day before orientation I did a hike to St.&nbsp;Mark’s Summit in the North Shore Mountains with a few others from the program. It was great to meet a few classmates who also enjoy hiking. I’m hoping I can get out to do more hiking with them this fall.</p>
+<p>Link to deployed app: <a href="https://xg-web-app.onrender.com" class="uri">https://xg-web-app.onrender.com</a></p>
+<p>The app may take a minute to wake up, this is expected.</p>
+<p>Link to github repository: <a href="https://github.com/grahamgreene88/Expected-Goals-xG-Model" class="uri">https://github.com/grahamgreene88/Expected-Goals-xG-Model</a></p>
+<p>This project is an end-to-end machine learning application. The three main components of the project are:</p>
+<ol type="1">
+<li>Data pipelines that ingest play-by-play data daily from the NHL API and store in an Aiven cloud postgres database</li>
+<li>An XGBoost ML xG model that was trained shot data from 2019-20 through 2024-25 and evaluted on the 2025-26 holdout test</li>
+<li>Streamlit web app with shot explorer and team-level xG trends deployed to Render web service</li>
+</ol>
+<p>For more detailed information, please visit the README file in the github repository linked above.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="st_marks_summit_hike.jpg" class="img-fluid figure-img"></p>
-<figcaption>View from St Marks Summit. It was a bit smoky :(</figcaption>
+<p><img src="team_xG_trends.jpg" class="img-fluid figure-img"></p>
+<figcaption>xGF% Chart from the Team xG Trends page of the deployed web app.</figcaption>
 </figure>
 </div>
-<p>Although I knew the MDS program was quite intense, I was still surprised at the pace of the program, even coming from an engineering background. Having just completed the second week of classes though, I find I am starting to get into a good rythm. This will really be tested next week during which we have three major evaluations on top of our normal lectures and labs.</p>
 
 
 

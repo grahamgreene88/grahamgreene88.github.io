@@ -14,11 +14,25 @@
     "text": "I am from Ottawa and I completed my undergrad in Chemical Engineering at Queen’s University. Before my Master’s in Data Science (MDS), I worked for Sanofi (biopharma) at the intersection of data science and vaccine manufacturing. During the MDS program I am looking to deepen my data science knowledge through formal education. This will help equip me to work in more senior data science roles in the healthcare, pharmaceutical, and biomedical fields going forward."
   },
   {
+    "objectID": "projects/xg-model/index.html",
+    "href": "projects/xg-model/index.html",
+    "title": "End-to-end Expected Goals (xG) NHL Model",
+    "section": "",
+    "text": "Link to deployed app: https://xg-web-app.onrender.com\nThe app may take a minute to wake up, this is expected.\nLink to github repository: https://github.com/grahamgreene88/Expected-Goals-xG-Model\nThis project is an end-to-end machine learning application. The three main components of the project are:\n\nData pipelines that ingest play-by-play data daily from the NHL API and store in an Aiven cloud postgres database\nAn XGBoost ML xG model that was trained shot data from 2019-20 through 2024-25 and evaluted on the 2025-26 holdout test\nStreamlit web app with shot explorer and team-level xG trends deployed to Render web service\n\nFor more detailed information, please visit the README file in the github repository linked above.\n\n\n\nxGF% Chart from the Team xG Trends page of the deployed web app."
+  },
+  {
     "objectID": "posts/first-weeks/index.html",
     "href": "posts/first-weeks/index.html",
     "title": "My first weeks in MDS",
     "section": "",
     "text": "Just over two weeks ago I started orientation for the Master’s of Data Science (MDS) program. The week went really fast and I met lots of cool people. There were lots of presentations as well as some team building activities. The orientation capped off with a Welcome Dinner where there was an alumni panel.\nThe day before orientation I did a hike to St. Mark’s Summit in the North Shore Mountains with a few others from the program. It was great to meet a few classmates who also enjoy hiking. I’m hoping I can get out to do more hiking with them this fall.\n\n\n\nView from St Marks Summit. It was a bit smoky :(\n\n\nAlthough I knew the MDS program was quite intense, I was still surprised at the pace of the program, even coming from an engineering background. Having just completed the second week of classes though, I find I am starting to get into a good rythm. This will really be tested next week during which we have three major evaluations on top of our normal lectures and labs."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "End-to-end Expected Goals (xG) NHL Model\n\n\n\n\n\n\n\n\nSep 12, 2026\n\n\nGraham\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

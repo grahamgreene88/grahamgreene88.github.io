@@ -4,5 +4,11 @@
     "items": [
       "/posts/first-weeks/index.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/xg-model/index.html"
+    ]
   }
 ]
