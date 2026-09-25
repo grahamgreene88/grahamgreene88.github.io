@@ -2,6 +2,8 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/python-penguins-analysis/index.html",
+      "/posts/r-penguins-analysis/index.html",
       "/posts/first-weeks/index.html"
     ]
   },

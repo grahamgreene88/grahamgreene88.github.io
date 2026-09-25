@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 12, 2026\n\n\nGraham Greene\n\n\n\n\n\nNo matching items"
+    "text": "Palmer Penguins Analysis in Python\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nGraham Greene\n\n\n\n\n\n\n\n\n\n\n\n\nPalmer Penguins Analysis in R\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nGraham Greene\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 12, 2026\n\n\nGraham Greene\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -21,11 +21,74 @@
     "text": "Link to deployed app: https://xg-web-app.onrender.com\nThe app may take a minute to wake up, this is expected.\nLink to github repository: https://github.com/grahamgreene88/Expected-Goals-xG-Model\nThis project is an end-to-end machine learning application. The three main components of the project are:\n\nData pipelines that ingest play-by-play data daily from the NHL API and store in an Aiven cloud postgres database\nAn XGBoost ML xG model that was trained shot data from 2019-20 through 2024-25 and evaluted on the 2025-26 holdout test\nStreamlit web app with shot explorer and team-level xG trends deployed to Render web service\n\nFor more detailed information, please visit the README file in the github repository linked above.\n\n\n\nxGF% Chart from the Team xG Trends page of the deployed web app."
   },
   {
+    "objectID": "posts/python-penguins-analysis/index.html",
+    "href": "posts/python-penguins-analysis/index.html",
+    "title": "Palmer Penguins Analysis in Python",
+    "section": "",
+    "text": "The Palmer Penguins data used in this analysis can be found here: https://pypi.org/project/palmerpenguins/\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport numpy as np\nfrom palmerpenguins import load_penguins\npenguins = load_penguins()"
+  },
+  {
+    "objectID": "posts/python-penguins-analysis/index.html#preview-the-data",
+    "href": "posts/python-penguins-analysis/index.html#preview-the-data",
+    "title": "Palmer Penguins Analysis in Python",
+    "section": "Preview the data",
+    "text": "Preview the data\n\npenguins = load_penguins()\npenguins.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+  },
+  {
+    "objectID": "posts/python-penguins-analysis/index.html#body-mass-and-flipper-length-by-island",
+    "href": "posts/python-penguins-analysis/index.html#body-mass-and-flipper-length-by-island",
+    "title": "Palmer Penguins Analysis in Python",
+    "section": "Body Mass and Flipper Length by Island",
+    "text": "Body Mass and Flipper Length by Island\n\ndf = penguins\ndf = df[df['species'] == 'Adelie']\ndf = df.groupby(by='island').agg(\n        mean_body_mass=('body_mass_g', 'mean'),\n        mean_flipper_length=('flipper_length_mm', 'mean'),\n    ).reset_index()\ndf\n\n\n\nTable 1: Average body mass and flipper length for Adelie penguins by island.\n\n\n\n\n\n\n\n\n\n\nisland\nmean_body_mass\nmean_flipper_length\n\n\n\n\n0\nBiscoe\n3709.659091\n188.795455\n\n\n1\nDream\n3688.392857\n189.732143\n\n\n2\nTorgersen\n3706.372549\n191.196078\n\n\n\n\n\n\n\n\n\n\nI filtered the penguins dataset for only penguins of the Adelie species. I then grouped the Adelie penguins by the island they were found and determined the mean body mass (g) and mean flipper length (mm) for each group.\nI determined that for the Adelie penguin species, the penguins on the islands of Biscoe and Torgersen have slightly higher mean body mass than those on Dream island. The mean flipper length of the Adelie penguins is almost the same between the 3 islands."
+  },
+  {
+    "objectID": "posts/python-penguins-analysis/index.html#bill-length-and-bill-depth-by-island",
+    "href": "posts/python-penguins-analysis/index.html#bill-length-and-bill-depth-by-island",
+    "title": "Palmer Penguins Analysis in Python",
+    "section": "Bill Length and Bill Depth by Island",
+    "text": "Bill Length and Bill Depth by Island\n\nadelie = penguins[penguins['species'] == 'Adelie']\n\nfig, ax = plt.subplots()\n\nfor island, group in adelie.groupby('island'):\n    ax.scatter(group['bill_depth_mm'], group['bill_length_mm'], label=island)\n\nax.set_title('Adelie penguins: bill length vs. bill depth')\nax.set_xlabel('Bill depth (mm)')\nax.set_ylabel('Bill length (mm)')\nax.legend(title='Island')\n\nax.spines[['top', 'right', 'left', 'bottom']].set_visible(False)\nax.grid(alpha=0.3)\nax.set_axisbelow(True)\n\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Bill length vs. bill depth for Adelie penguins by island.\n\n\n\n\n\nI created a scatter plot of bill length vs. bill depth for the Adelie species penguins. The points are cloloured based on the island they were found.\nFrom the plot above, it appears as though the bill length and depth is slightly more variable for Adelie penguins on Torgersen compared to the other islands but the difference is small."
+  },
+  {
+    "objectID": "posts/python-penguins-analysis/index.html#body-mass-by-island-and-sex",
+    "href": "posts/python-penguins-analysis/index.html#body-mass-by-island-and-sex",
+    "title": "Palmer Penguins Analysis in Python",
+    "section": "Body Mass by Island and Sex",
+    "text": "Body Mass by Island and Sex\n\nmeans = (\n    adelie.dropna(subset=['sex'])\n    .groupby(['island', 'sex'])['body_mass_g']\n    .mean()\n    .unstack('sex')\n)\n\nx = np.arange(len(means.index))\nn = len(means.columns)\nwidth = 0.8 / n\n\nfig, ax = plt.subplots()\n\nfor i, sex in enumerate(means.columns):\n    offset = (i - (n - 1) / 2) * width\n    ax.bar(x + offset, means[sex], width, label=sex)\n\nax.set_xticks(x, means.index)\nax.set_title('Adelie penguins: average body mass by island and sex')\nax.set_xlabel('Island')\nax.set_ylabel('Average body mass (g)')\nax.legend(title='Sex')\n\nax.spines[['top', 'right', 'left', 'bottom']].set_visible(False)\nax.grid(axis='y', alpha=0.3)\nax.set_axisbelow(True)\n\nplt.show()\n\n\n\n\n\n\n\nFigure 2: Average body mass for Adelie penguins by island and sex.\n\n\n\n\n\nIn the bar plot above, I plotted the average body mass (g) of Adelie penguins based on their island and sex. For the penguins on all three islands, the males are consistently heavier than the females. The average weights between the males on each island and between the females on each island are quite similar."
+  },
+  {
     "objectID": "posts/first-weeks/index.html",
     "href": "posts/first-weeks/index.html",
     "title": "My first weeks in MDS",
     "section": "",
     "text": "Just over two weeks ago I started orientation for the Master’s of Data Science (MDS) program. The week went really fast and I met lots of cool people. There were lots of presentations as well as some team building activities. The orientation capped off with a Welcome Dinner where there was an alumni panel.\nThe day before orientation I did a hike to St. Mark’s Summit in the North Shore Mountains with a few others from the program. It was great to meet a few classmates who also enjoy hiking. I’m hoping I can get out to do more hiking with them this fall.\n\n\n\nView from St Marks Summit. It was a bit smoky :(\n\n\nAlthough I knew the MDS program was quite intense, I was still surprised at the pace of the program, even coming from an engineering background. Having just completed the second week of classes though, I find I am starting to get into a good rythm. This will really be tested next week during which we have three major evaluations on top of our normal lectures and labs."
+  },
+  {
+    "objectID": "posts/r-penguins-analysis/index.html",
+    "href": "posts/r-penguins-analysis/index.html",
+    "title": "Palmer Penguins Analysis in R",
+    "section": "",
+    "text": "The Palmer Penguins data used in this analysis can be found here: Data: Palmer Penguins, Palmer Station Antarctica LTER.\nlibrary(tidyverse)\nlibrary(palmerpenguins)"
+  },
+  {
+    "objectID": "posts/r-penguins-analysis/index.html#body-mass-and-flipper-length-by-island",
+    "href": "posts/r-penguins-analysis/index.html#body-mass-and-flipper-length-by-island",
+    "title": "Palmer Penguins Analysis in R",
+    "section": "Body Mass and Flipper Length by Island",
+    "text": "Body Mass and Flipper Length by Island\n\n\n\nTable 1: Body mass and flipper length for Adelie penguins by island.\n\n\nsm_penguins &lt;- penguins %&gt;%\n  filter(species == 'Adelie') %&gt;%\n  group_by(island) %&gt;%\n  summarise(mean_body_mass = mean(body_mass_g, na.rm = TRUE),\n            mean_flipper_length = mean(flipper_length_mm, na.rm = TRUE))\n\nsm_penguins\n\n# A tibble: 3 × 3\n  island    mean_body_mass mean_flipper_length\n  &lt;fct&gt;              &lt;dbl&gt;               &lt;dbl&gt;\n1 Biscoe             3710.                189.\n2 Dream              3688.                190.\n3 Torgersen          3706.                191.\n\n\n\n\nI filtered the penguins dataset for only penguins of the Adelie species. I then grouped the Adelie penguins by the island they were found and determined the mean body mass (g) and mean flipper length (mm) for each group.\nI determined that for the Adelie penguin species, the penguins on the islands of Biscoe and Torgersen have slightly higher mean body mass than those on Dream island. The mean flipper length of the Adelie penguins is almost the same between the 3 islands."
+  },
+  {
+    "objectID": "posts/r-penguins-analysis/index.html#bill-length-and-bill-depth-by-island",
+    "href": "posts/r-penguins-analysis/index.html#bill-length-and-bill-depth-by-island",
+    "title": "Palmer Penguins Analysis in R",
+    "section": "Bill Length and Bill Depth by Island",
+    "text": "Bill Length and Bill Depth by Island\n\npenguins %&gt;%\n  filter(species == \"Adelie\") %&gt;%\n  ggplot(aes(x = bill_depth_mm, y = bill_length_mm, colour = island)) +\n  geom_point(na.rm = TRUE) +\n  labs(\n    title = \"Adelie penguins: bill length vs. bill depth\",\n    x = \"Bill depth (mm)\",\n    y = \"Bill length (mm)\",\n    colour = \"Island\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Bill length vs. bill depth for Adelie penguins by island.\n\n\n\n\n\nI created a scatter plot of bill length vs. bill depth for the Adelie species penguins. The points are cloloured based on the island they were found.\nFrom the plot above, it appears as though the bill length and depth is slightly more variable for Adelie penguins on Torgersen compared to the other islands but the difference is small."
+  },
+  {
+    "objectID": "posts/r-penguins-analysis/index.html#body-mass-by-island-and-sex",
+    "href": "posts/r-penguins-analysis/index.html#body-mass-by-island-and-sex",
+    "title": "Palmer Penguins Analysis in R",
+    "section": "Body Mass by Island and Sex",
+    "text": "Body Mass by Island and Sex\n\npenguins %&gt;%\n  filter(species == \"Adelie\", !is.na(sex)) %&gt;%\n  group_by(island, sex) %&gt;%\n  summarise(mean_mass = mean(body_mass_g, na.rm = TRUE), .groups = \"drop\") %&gt;%\n  ggplot(aes(x = island, y = mean_mass, fill = sex)) +\n  geom_col(position = position_dodge()) +\n  labs(\n    title = \"Adelie penguins: average body mass by island and sex\",\n    x = \"Island\",\n    y = \"Average body mass (g)\",\n    fill = \"Sex\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 2: Average body mass for Adelie penguins by island and sex.\n\n\n\n\n\nIn the bar plot above, I plotted the average body mass (g) of Adelie penguins based on their island and sex. For the penguins on all three islands, the males are consistently heavier than the females. The average weights between the males on each island and between the females on each island are quite similar."
   },
   {
     "objectID": "projects.html",

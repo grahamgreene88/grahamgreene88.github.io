@@ -1,0 +1,76 @@
+---
+title: "Palmer Penguins Analysis in R"
+author: "Graham Greene"
+date: 2026-09-24
+---
+
+
+The Palmer Penguins data used in this analysis can be found here: Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), Palmer Station Antarctica LTER.
+
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+library(palmerpenguins)
+```
+
+
+## Body Mass and Flipper Length by Island
+```{r}
+#| label: tbl-analysis
+#| tbl-cap: Body mass and flipper length for Adelie penguins by island.
+#| warning: true
+sm_penguins <- penguins %>%
+  filter(species == 'Adelie') %>%
+  group_by(island) %>%
+  summarise(mean_body_mass = mean(body_mass_g, na.rm = TRUE),
+            mean_flipper_length = mean(flipper_length_mm, na.rm = TRUE))
+
+sm_penguins
+```
+
+I filtered the penguins dataset for only penguins of the Adelie species. I then grouped the Adelie penguins by the island they were found and determined the mean body mass (g) and mean flipper length (mm) for each group.
+
+I determined that for the Adelie penguin species, the penguins on the islands of Biscoe and Torgersen have slightly higher mean body mass than those on Dream island. The mean flipper length of the Adelie penguins is almost the same between the 3 islands.
+
+## Bill Length and Bill Depth by Island
+```{r}
+#| label: fig-scatter-plot
+#| fig-cap: "Bill length vs. bill depth for Adelie penguins by island."
+penguins %>%
+  filter(species == "Adelie") %>%
+  ggplot(aes(x = bill_depth_mm, y = bill_length_mm, colour = island)) +
+  geom_point(na.rm = TRUE) +
+  labs(
+    title = "Adelie penguins: bill length vs. bill depth",
+    x = "Bill depth (mm)",
+    y = "Bill length (mm)",
+    colour = "Island"
+  ) +
+  theme_minimal()
+```
+
+I created a scatter plot of bill length vs. bill depth for the Adelie species penguins. The points are cloloured based on the island they were found. 
+
+From the plot above, it appears as though the bill length and depth is slightly more variable for Adelie penguins on Torgersen compared to the other islands but the difference is small.
+
+## Body Mass by Island and Sex
+```{r}
+#| label: fig-bar-plot
+#| fig-cap: "Average body mass for Adelie penguins by island and sex."
+penguins %>%
+  filter(species == "Adelie", !is.na(sex)) %>%
+  group_by(island, sex) %>%
+  summarise(mean_mass = mean(body_mass_g, na.rm = TRUE), .groups = "drop") %>%
+  ggplot(aes(x = island, y = mean_mass, fill = sex)) +
+  geom_col(position = position_dodge()) +
+  labs(
+    title = "Adelie penguins: average body mass by island and sex",
+    x = "Island",
+    y = "Average body mass (g)",
+    fill = "Sex"
+  ) +
+  theme_minimal()
+```
+
+In the bar plot above, I plotted the average body mass (g) of Adelie penguins based on their island and sex. For the penguins on all three islands, the males are consistently heavier than the females. The average weights between the males on each island and between the females on each island are quite similar.
